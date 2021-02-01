@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>homepage</title>
+     <!--Custom Font-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+     <!--icons-->
+     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+     <script src="https://kit.fontawesome.com/108adcc263.js" crossorigin="anonymous"></script>
+     <!--Custom CSS-->
+     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+     <!--JQuery-->
+     <!--<script  type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+     <script src="./resources/js/jquery-1.8.3.min.js"></script>
+     
+     <!-- 제이쿼리 다른버전 -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+     
+     <!-- jQuery easing모달창 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+     
+    <!--외부 js 불러오기  -->
+     <script async src="./resources/js/main-js.js"></script>
+     <!--async : 스크립트가 사용가능 할때는 즉시 실행  -->
+
+</head>
+<body>
+
+     <header>
+     <div class="wrap">
+          <div class="intro_bg">
+               <div class="header" id="link_header">
+                    <div class="search_area">
+                         <div class="myicon"><i class="fab fa-linode"></i></div>
+                         <div class="lucyworld">LUCY WORLD</div>
+                              <audio id="audio" autoplay>
+                                   <source src="./resources/images/bgm.mp3">
+                              </audio>
+                          
+                         
+                         <!-- <embed src="./resources/images/bgm.mp3" hidden="true" width="100" height="50"> -->
+                         <!-- <form>
+                              <input type="search" placeholder="Search">
+                              <span>검색</span>
+                         </form> -->
+                    </div>
+                    <ul class="nav">
+                         <li><a href="#link_header">HOME</a></li>
+                         <li><a href="#link_main_about">ABOUT</a></li>
+                         <li><a href="#link_main_me">ME</a></li>
+                         <li><a href="#link_main_contact">CONTACT</a></li>
+                         <!-- easing사용 -->
+                         <li><a href="#ex1" rel="modal:open">LIST</a></li>
+                         <div id="ex1" class="modal">
+                              <p>지금까지 contact 회원목록</p>
+                              <!-- <input type="button" value="DELETE" onclick="localStorage.clear();" id="loadremove"> -->
+                              <div id="wrapper">
+                                   <table id="userInfo"></table>
+                              </div>
+                              <!-- <a href="#" rel="modal:close">Close</a> -->
+                         </div>
+                            
+                    </ul>
+               </div>
+               
+               <div class="intro_text">
+                    <h1>Who is the SOYEON?</h1>
+                    <h4 class="contents1">제가 박소연입니다. </h4>
+               </div>
+          </div>
+     </div>
+          <!--intro end-->
+
+          <!--amount-->
+     <ul class="amount">
+          <li>
+               <div>
+                    <div class="contents1">지금까지 해먹은 돈</div>
+                    <div class="result">$240,000</div>
+               </div>
+          </li>
+          <li>
+               <div>
+                    <div class="contents1">코딩 시작 후</div>
+                    <div class="result">97일째</div>
+               </div>
+          </li>
+          <li>
+               <div>
+                    <div class="contents1">최종 목표날</div>
+                    <div class="result">6월8일</div>
+               </div>
+          </li>
+          <li>
+               <div>
+                    <div class="contents1">살아온 날</div>
+                    <div class="result">10429일+</div>
+               </div>
+          </li>
+     </ul>
+         
+     </header>
+     <!--amount end-->
+     <section>
+     <!--main_about-->
+          <div class="main_about" id="link_main_about">
+               <h1>ABOUT</h1>
+               <p class="contents1">저는 이번에 새로 태어난 신입 개발자입니다.</p>
+          
+               <ul class= "icons">
+                    <li>
+                         <div class="icon_img">
+                              <img src="./resources/images/icon0.svg" alt="계획이모티콘">
+                         </div>
+                         <p class="about_icontitle">치밀한 계획</p>
+                         <div class="contents2">
+                              저는 치밀하게 계획을 세운 뒤 일을 처리합니다.
+                         </div>
+                         <button class="openBtn"  id="more1_pop">MORE</button>
+                         <div class="modal0 hidden">
+                              <div class="bg"></div>
+                              <div class="modalBox">
+                                   <h2>개발자의 로드맵</h2>
+                                   <p>치밀한계획</p>
+                                   <br> 
+                                   <div class="process-wrapper">
+                                   <div id="progress-bar-container">
+                                        <ul>
+                                             <li class="step step01 active"><div class="step-inner">PRSENT</div></li>
+                                             <li class="step step02"><div class="step-inner">06 MONTHS LATER</div></li>
+                                             <li class="step step03"><div class="step-inner">01 YEARS LATER</div></li>
+                                             <li class="step step04"><div class="step-inner">03 YEARS LATER</div></li>
+                                             <li class="step step05"><div class="step-inner">05 YEARS LATER</div></li>
+                                        </ul>
+                                        
+                                        <div id="line">
+                                             <div id="line-progress"></div>
+                                        </div>
+                                   </div>
+
+                                   <div id="progress-content-section">
+                                        <div class="section-content present active">
+                                             <h2>PRSENT</h2>
+                                             <br>
+                                             <p>JAVA, DB, HTML, CSS, JAVASCRIPT, JQUERY 계속 복습 !
+                                             <br>
+                                             <br> => 프로그래밍 언어활용(java), 네트워크 프로그래밍 구현, UI/UX 요구 분석,
+                                             <br>SQL활용&응용, UI/UX구현
+                                             </p>
+                                        </div>
+                                        
+                                        <div class="section-content month6">
+                                             <h2>06 MONTHS LATER</h2>
+                                             <br>
+                                             <p>6개월뒤에는 그동안 배웠던 언어들은 헤메지않고 사용 할 수 있도록.
+                                             <br>
+                                             <br> => 네트워크 프로그래밍 구현, UI/UX구현/서버프로그램 구현, 펌웨어 구현, 
+                                             <br>디바이스 드라이버 구현, 임베디드 애플리케이션 구현, 인터페이스 구현
+                                             </p>
+                                        </div>
+                                        
+                                        <div class="section-content years1">
+                                             <h2>01 YEARS LATER</h2>
+                                             <br>
+                                             <p>1년뒤에는 회사및 클라이언트가 요구하는 사항들을 꼼꼼히 구현 + α
+                                             <br>
+                                             <br> => Python + 관계형데이터베이스(postgreSQL) + NoSQL데이터베이스(MongoDB) 
+                                             <br>ACID원칙,키 ,인덱스, SQL문법들
+                                             </p>
+                                        </div>
+                                        
+                                        <div class="section-content years3">
+                                             <h2>03 YEARS LATER</h2>
+                                             <br>
+                                             <p>기술의 선택, 기술을 바탕으로 주변에게 버프를 줄 수 있는 개발자가 되고싶다
+                                             <br>
+                                             <br> => Caching을 배워 Redis,Memcached가 어떤 문제들을 해결하고,
+                                             <br>authentication이 어떤 authentication (인증)이 이용 가능하도록
+                                             </p>
+                                        </div>
+                                        
+                                        <div class="section-content years5">
+                                             <h2>05 YEARS LATER</h2>
+                                             <br>
+                                             <p>분산형 시스템을 공부
+                                             <br>
+                                             <br> => Distributes systems
+                                             <br> Cap theorem, base원칙을공부 -> 분산형 시스템을 만질확률이 높아서
+                                             </p>
+                                        </div>
+                                   </div>
+                                   </div>
+
+                              <button id="closeBtn" class="closeBtn">✖</button>
+                              </div>
+                         </div>  
+                    </li>
+                    <li>
+                         <div class="icon_img">
+                              <img src="./resources/images/icon1.svg" alt="취미이모티콘">
+                         </div>
+                         <p class="about_icontitle">취미</p>
+                         <div class="contents2">
+                              저는 여행 다니는 것을 좋아합니다
+                         </div>  
+                         <button class="openBtn"  id="more2_pop">MORE</button>
+                         <div class="modal1 hidden">
+                              <div class="bg"></div>
+                              <div class="modalBox">
+                                   <h2>취미생활은 여행으로</h2>
+                                   <p>취미</p>
+                                   <div class="slider">
+                                        <div class="images">
+                                            <input type="radio" name="slide" id="img1" checked>
+                                            <input type="radio" name="slide" id="img2">
+                                            <input type="radio" name="slide" id="img3">
+                                            <input type="radio" name="slide" id="img4">
+                                            <input type="radio" name="slide" id="img5">
+                                            <input type="radio" name="slide" id="img6">
+                                            <input type="radio" name="slide" id="img7">
+
+                                            <img src="./resources/images/slide0.jpg" class="m1" alt="img1">
+                                            <img src="./resources/images/slide1.jpg" class="m2" alt="img2">
+                                            <img src="./resources/images/slide2.jpg" class="m3" alt="img3">
+                                            <img src="./resources/images/slide3.jpg" class="m4" alt="img4">
+                                            <img src="./resources/images/slide4.jpg" class="m5" alt="img5">
+                                            <img src="./resources/images/slide5.jpg" class="m6" alt="img6">
+                                            <img src="./resources/images/slide6.jpg" class="m7" alt="img7">
+                                        </div>
+                                        <div class="dots">
+                                            <label for="img1"></label>
+                                            <label for="img2"></label>
+                                            <label for="img3"></label>
+                                            <label for="img4"></label>
+                                            <label for="img5"></label>
+                                            <label for="img6"></label>
+                                            <label for="img7"></label>
+                                        </div>
+                                    </div>
+                                   
+                              <button id="closeBtn1" class="closeBtn1">✖</button>
+                              </div>
+                         </div>   
+                    </li>
+                    <li>
+                         <div class="icon_img">
+                              <img src="./resources/images/icon2.svg" alt="지식이모티콘">
+                         </div>
+                         <p class="about_icontitle">쓸어담은 지식</p>
+                         <div class="contents2">
+                              지금까지 배운 언어 Java,DB,HTML,CSS,Javascript
+                         </div>
+                         <button class="openBtn" id="more3_pop" onclick="moreFn()">MORE</button>
+                         <div class="modal2 hidden">
+                              <div class="bg"></div>
+                              <div class="modalBox">
+                                   <h2>지금까지 배운 언어들</h2>
+                                   <p>Control Level</p>
+                                   <br><br>
+                                   <div class="program_div">
+                                        <p>JAVA</p> 
+                                        <div id="java">
+                                        <div id="demojava" ></div>
+                                        </div>
+                                   </div>
+                                   <div class="program_div">
+                                        <p>DB</p> 
+                                        <div id="db">
+                                             <div id="demodb" ></div>
+                                        </div>
+                                   </div>
+                                   <div class="program_div">
+                                        <p>HTML5</p>
+                                        <div id="html">
+                                             <div id="demohtml" ></div>
+                                        </div>
+                                   </div>
+                                   <div class="program_div">
+                                        <p>CSS</p>
+                                        <div id="css">
+                                             <div id="democss" ></div>
+                                        </div>
+                                   </div>
+                                   <div class="program_div">
+                                        <p>JAVASCRIPT</p>
+                                        <div id="javascript">
+                                             <div id="demojavascript" ></div>
+                                        </div>
+                                   </div>
+                                   <div class="program_div">
+                                        <p>JQUERY</p>
+                                        <div id="jquery">
+                                             <div id="demojquery" ></div>
+                                        </div>
+                                   </div>                 
+                                   <button id="closeBtn2" class="closeBtn2">✖</button>
+                              </div>
+                         </div>  
+                    </li>
+               </ul>
+          </div>
+     </section>
+     <!--main_about end-->
+
+     <!--main_me-->
+     <section>
+          <div class="main_me" id="link_main_me">
+               <h1>ME</h1>
+               <div class="contents1">저에 대해 좀더 알려드릴께요.</div>
+               <div class="me">
+                    <div class="my_photo">
+                         <img src="./resources/images/bigme.jpg" alt="main_me의 본인사진">
+                    </div>
+                    <div class="contents2">
+                         <h2>제가 박소연이자, Lucy입니다</h2>
+                         <p class="me_text">
+                         <br>이름: 박소연
+                         <br>영어이름: Lucy
+                         <br>성별 : 여
+                         <br>생년월일: 1992.07.15
+                         <br>이메일: soyeonp92@gmail.com
+                         <br>취미: 여행다니기
+                         <br>장점: 국제감각, 어학능력
+                         <br>단점: 게으른사람들 중에 제일 부지런함
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--main_me end-->
+
+     <!-- more about-->
+     <section>
+          <div class="more_about">
+               <p>특별하진 않아도 열심히 사는 사람</p>
+               <h1>나는 이런 사람입니다</h1>
+               <div class="me2">
+                    <div class="contents2">
+                         <h2>"착한 사람입니다"</h2>
+                         <h4>평소 말이 없고 화나있는 표정 때문에<br>
+                         오해를 많이 받지만 강아지를 좋아하는 순수한 사람입니다</h4>
+                    </div>
+                    <div class="me-more">
+                         <img src="./resources/images/dogwithme.jpg" alt="강아지랑찍은사진">
+                    </div>
+
+                    <div class="contents2-1">
+                         <h2>"활동적인 사람입니다"</h2>
+                         <h4>운동실력이 좋아서 움직이는 것을 좋아합니다<br>
+                         꾸준히 운동으로 건강을 관리해왔습니다</h4>
+                    </div>
+                    <div class="me-more2-1">
+                         <img src="./resources/images/activeme.jpg" alt="썰매타는사진">
+                    </div>
+                    <div class="contents2-2">
+                         <h2>"최선을 다하는 사람입니다"</h2>
+                         <h4>맡은 일에 관해서는 최선을 다합니다<br>
+                         언제나 열심히합니다!</h4>
+                    </div>
+                    <div class="me-more2-2">
+                         <img src="./resources/images/foodme.jpg" alt="먹는사진">
+                    </div>
+          
+               </div>
+          </div>
+     </section>
+     <!-- more about end-->
+
+     <!--main_contact-->
+     <section>
+          <div class="main_contact" id="link_main_contact">
+               <ul>
+                    <li>
+                         <h1>CONTACT</h1>
+                         <p>If you want to hire me, don't hesitate.</p>
+                         <div class="more2">
+                              더 알아보기
+                         </div>
+                         <div id="contact-modal" class="conmodal">
+     
+                              <!-- Modal content -->
+                              <div class="modal-content">
+                                   <form action="javascript:saveUserInfo();" name="contactmember" method="GET">
+                                       
+                                        <table id="usermember">
+                                             <tr>
+                                               <th><label for="userName">이름</label></th>
+                                               <td><input type="text" name="userName" id="userName" placeholder="홍길동"></td>
+                                             </tr>
+                                             <tr>
+                                               <th><label for="useremail">이메일</label></th>
+                                               <td><input type="email" name="useremail" id="useremail" placeholder="hongged@naver.com"></td>
+                                             </tr>
+                                             <tr>
+                                                  <th><label for="userMemo">내용</label></th>
+                                                  <td><textarea name="userMemo" id="userMemo" placeholder="궁금하신점 적어주세요"></textarea></td>
+                                                </tr>
+                                             <tr>
+                                               <td colspan="2">
+                                                 <input type="submit" id="contsubmit" value="저장">
+                                               </td>
+                                             </tr>
+                                        </table>
+                                       
+                                   </form>
+                                   <div class="contact-closebtn" onClick="close_pop();">✖</div>      
+                              </div>
+                         </div>
+                    </li>
+                    <li></li>
+               </ul>
+          </div>
+     </section>
+     <!--main_contact end-->
+
+     <!--footer-->
+     <footer class="footer">
+          <div class="inner-footer">
+               <div class="social-links">
+                    <ul>
+                         <li class="social-items"><a href="https://www.notion.so/LUCY-WORLD-97bf8df33e5e4863be9891f0f3f92145"><i class="fab fa-neos"></i></a></li>
+                         <li class="social-items"><a href="https://www.instagram.com/27s.duck/"><i class="fab fa-instagram"></i></a></li>
+                         <li class="social-items"><a href="https://github.com/parksoyeonme"><i class="fab fa-github"></i></a></li>
+                    </ul>
+               </div>
+
+               <div class="quick-links">
+                    <ul>
+                         <li class="quick-items"><a href="#link_header">Home</a></li>
+                         <li class="quick-items"><a href="#link_main_about">ABOUT</a></li>
+                         <li class="quick-items"><a href="#link_main_me">ME</a></li>
+                         <li class="quick-items"><a href="#link_main_contact">CONTACT</a></li>
+                    </ul>
+               </div>
+          </div>
+          <div class="outer-footer">
+               Copyright &copy; My Website 2021
+          </div>
+     </footer>
+
+</body>
+</html>
